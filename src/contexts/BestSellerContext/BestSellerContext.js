@@ -13,8 +13,6 @@ export const BestSellerContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(bestSellerReducer, initialState);
 
   useEffect(() => {
-    const apiKey = "2n9pws7675zn9bu39htq5gjz";
-
     fetch(
       `https://api.penguinrandomhouse.com/resources/v2/title/domains/SALESINTERNATIONAL/categories/1/titles?showBestsellers=true&showCovers=true&api_key=${apiKey}`
     )

@@ -14,7 +14,6 @@ export const HistoryContextProvider = ({ children }) => {
   const [state, dispatch] = useReducer(historyReducer, initialState);
 
   //Get Data From API
-  const apiKey = "2n9pws7675zn9bu39htq5gjz";
   useEffect(() => {
     fetch(
       `https://api.penguinrandomhouse.com/resources/v2/title/domains/SALESINTERNATIONAL/categories/1/titles?showCovers=true&api_key=${apiKey}`

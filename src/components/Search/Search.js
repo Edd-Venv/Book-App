@@ -17,8 +17,7 @@ const Search = () => {
   };
 
   const onAddSearch = text => {
-    const apiKey = "2n9pws7675zn9bu39htq5gjz";
-    const url = `https://api.penguinrandomhouse.com/resources/v2/title/domains/PRH.US/search/views/search-display?q=${text}&api_key=${apiKey}`;
+    const url = `https://api.penguinrandomhouse.com/resources/v2/title/domains/PRH.US/search/views/search-display?q=${text}&api_key=`;
     (async function fetchData() {
       await fetch(url)
         .then(response => {
